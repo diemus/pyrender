@@ -52,7 +52,7 @@ async def get_browser():
     ]
     global main_browser
     if not main_browser:
-        main_browser = await launch(headless=False, ignoreHTTPSErrors=True, args=browser_args)
+        main_browser = await launch(headless=True, ignoreHTTPSErrors=True, args=browser_args)
     return main_browser
 
 
